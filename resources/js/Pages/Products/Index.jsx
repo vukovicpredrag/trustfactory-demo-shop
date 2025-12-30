@@ -41,7 +41,7 @@ export default function Index({ products }) {
     );
 }
 
-// product card componet
+// product card component
 function ProductCard({ product, user }) {
     const { post, processing } = useForm({
         quantity: 1,

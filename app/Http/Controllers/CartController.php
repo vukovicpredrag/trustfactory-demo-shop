@@ -56,7 +56,7 @@ class CartController extends Controller
         $cartItem = $cart->items()->where('product_id', $product->id)->first();
 
         if ($cartItem) {
-            // update quanity if already exists
+            // update quantity if already exists
             $newQuantity = $cartItem->quantity + $quantity;
             if ($product->stock_quantity < $newQuantity) {
                 return back()->withErrors(['quantity' => 'Not enough stock available.']);

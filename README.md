@@ -4,7 +4,6 @@ A simple e-commerce shopping cart system built with Laravel 12, React (Inertia.j
 
 ## Features
 
-- Browse products
 - User authentication (login/register)
 - Add products to cart
 - Update cart quantities
